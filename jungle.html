@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jungle Adventure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="jungle-body">
+    <div class="header">
+        <h1>🌳 The Jungle 🌳</h1>
+        <div class="nav">
+            <a href="index.html">Ocean</a>
+            <a href="page2.html">Jungle</a>
+        </div>
+    </div>
+
+    <div class="jungle-content">
+        <div class="tree" onclick="treeShake()">        <p>its da coconut tree :0</p>
+</div>
+        
+        <div class="monkey" id="monkey" onclick="spinMonkey()"></div>
+        
+        <div class="banana" onmouseover="growBanana()" onmouseout="shrinkBanana()"></div>
+        
+        <div class="monkey-name-section">
+            <h3>Name the Monkey:</h3>
+            <input type="text" id="monkey-name" placeholder="Enter monkey's name" oninput="updateMonkeyName()">
+            <h6 id="monkey-greeting">Hi I'm Monkey!</h6>
+        </div>
+
+        <div class="jungle-info">
+            <h3>Jungle Facts</h3>
+            <p id="jungle-fact">Click the tree to learn something new!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
